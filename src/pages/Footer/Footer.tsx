@@ -1,5 +1,4 @@
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
-import Button from '../../components/Button/Button'
 import styles from './Footer.module.css'
 
 const Footer = () => {

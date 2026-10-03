@@ -1,4 +1,3 @@
-import React from 'react'
 import productFive from '../../assets/imagesProducts/productFive.jpg'
 import style from './About.module.css'
 import Button from '../../components/Button/Button'
