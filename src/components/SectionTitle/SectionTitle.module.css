@@ -1,0 +1,12 @@
+.sectionTitle {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+  margin: 0;
+}
+
+.sectionTitle p {
+  margin: 0.5rem 0 0;
+  color: #6b7280;
+}

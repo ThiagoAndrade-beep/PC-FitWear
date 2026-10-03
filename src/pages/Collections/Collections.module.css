@@ -1,0 +1,106 @@
+.collectionSection {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  padding-left: 3rem;
+}
+
+.collectionSection::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(212, 175, 55, 0.45);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #d4af37;
+}
+
+.labelText {
+  color: #ffffff;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.titles h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  text-transform: uppercase;
+  font-family: 'Italiana', sans-serif;
+  font-weight: 400;
+}
+
+.titles p {
+  max-width: 720px;
+  margin: 0;
+  color: #B7B7B7;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  width: 40%;
+}
+
+.categoriesFilter {
+  margin-bottom: 2.5rem;
+}
+
+.cardProducts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 2rem;
+}
+
+@media (max-width: 900px) {
+  .collectionSection {
+    padding-top: 5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .titles p {
+    width: min(100%, 520px);
+  }
+
+  .cardProducts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .collectionSection {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .categoriesFilter {
+    margin-bottom: 1.5rem;
+  }
+
+  .cardProducts {
+    grid-template-columns: 1fr;
+  }
+}

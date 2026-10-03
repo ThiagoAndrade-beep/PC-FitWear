@@ -1,0 +1,143 @@
+.instagramSection {
+  position: relative;
+  padding: 96px 4vw 82px;
+  background: #fffefe;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 760px;
+  margin-bottom: 50px;
+}
+
+.identifier {
+  color: #d4af37;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.6rem, 4vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(107, 107, 107, 0.78);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-family: "Inter", sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.mainImageWrapper,
+.smallImageWrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #1a1a1a;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.mainImageWrapper {
+  min-height: 620px;
+}
+
+.mainImage,
+.smallImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.mainImageWrapper:hover .mainImage,
+.smallImageWrapper:hover .smallImage {
+  transform: scale(1.03);
+}
+
+.sideGallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.smallImageWrapper {
+  min-height: 295px;
+}
+
+.floatingButton {
+  position: absolute;
+  right: 28px;
+  bottom: 18px;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #d4af37;
+  color: #111111;
+  box-shadow: 0 18px 38px rgba(212, 175, 55, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floatingButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 42px rgba(212, 175, 55, 0.35);
+}
+
+@media (max-width: 900px) {
+  .instagramSection {
+    padding: 72px 1.25rem 52px;
+  }
+
+  .header {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .mainImageWrapper {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sideGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .mainImageWrapper,
+  .smallImageWrapper {
+    min-height: 240px;
+  }
+
+  .floatingButton {
+    right: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+  }
+}
