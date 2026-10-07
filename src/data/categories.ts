@@ -1,10 +1,10 @@
 export const Categories = [
-    'TODOS',
-    'CONJUNTOS',
-    'LEGGINS',
-    'TOPS',
-    'SHORTS',
-    'CROPPEDS',
-    'CAMISETAS',
-    'NOVIDADES'
+  'TODOS',
+  'PLUS SIZE',
+  'CONJUNTOS',
+  'CALÇAS',
+  'MACACÕES',
+  'SHORTS',
+  'BLUSAS',
+  'MODA CRISTÃ',
 ]
