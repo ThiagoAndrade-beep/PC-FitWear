@@ -1,11 +1,15 @@
 .card {
-  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .image {
-  width: 516px;
-  height: 569px;
+  width: 100%;
+  aspect-ratio: 516 / 569;
+  height: auto;
   object-fit: cover;
 }
 
@@ -34,6 +38,9 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin-top: 0.70rem;
 }
 
@@ -42,6 +49,7 @@
   font-family: 'Italiana', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
+  min-height: 3em;
 }
 
 .sizes {
@@ -50,6 +58,11 @@
   font-size: 0.78rem;
   font-family: 'Inter', sans-serif;
   margin-bottom: 1rem;
+}
+
+.content button {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 @media (max-width: 560px) {
